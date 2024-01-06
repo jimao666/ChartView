@@ -1,11 +1,13 @@
 //顶级生成文件，您可以在其中添加所有子项目/模块公用的配置选项。
 
 buildscript{
-存储库{
-谷歌()
-JCenter()
+maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+        maven { url 'https://jitpack.io' }
+        google()
+        jcenter()
+    }
         
-}
+
 相依性{
 类路径'com.android.tools.build:gradle:3.5.2'
 类路径'COM.GitHub.ducents:android-maven-gradle-plugin:2。1'
@@ -15,9 +17,11 @@ JCenter()
 }
 
 AllProjects{
-存储库{
-谷歌()
-JCenter()
+maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+        maven { url 'https://jitpack.io' }
+        google()
+        jcenter()
+    
         
 }
 }
