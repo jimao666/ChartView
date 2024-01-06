@@ -1,31 +1,28 @@
-//顶级生成文件，您可以在其中添加所有子项目/模块公用的配置选项。
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
 
-buildscript{
-maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+buildscript {
+    
+    repositories {
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
         maven { url 'https://jitpack.io' }
         google()
         jcenter()
     }
-        
-
-相依性{
-类路径'com.android.tools.build:gradle:3.5.2'
-类路径'COM.GitHub.ducents:android-maven-gradle-plugin:2。1'
-        //注意：不要将应用程序依赖项放在此处；它们属于
-        //在各个模块构建.Gradle文件中
-}
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+    }
 }
 
-AllProjects{
-maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+allprojects {
+    repositories {
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
         maven { url 'https://jitpack.io' }
         google()
         jcenter()
-    
-        
-}
+    }
 }
 
-任务清除(类型：删除){
-删除rootProject。builddir
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }
