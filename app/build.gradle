@@ -1,8 +1,7 @@
-申请插件： 'com.github.dccendents.android-maven'
-组='com.github.jimao666'
-申请插件： 'com.android.application'
 
-Android{
+申请插件：'com.android.application'
+
+安卓{
 compileSdkVersion29
 buildToolsVersion"29.0.2"
 DefaultConfig{
@@ -51,11 +50,11 @@ medical{dimension"标记"}
 }
 
 productFlavors。所有{
-风味->风味。manifestPlaceholder= [Atman_CHANNEL_VALUE：姓名]
+风味->风味。manifestPlaceholder=[Atman_CHANNEL_VALUE：姓名]
 }
 
     //自定义打包时apk名字
-安卓。applicationVariants.所有{变体->
+安卓。应用程序变量。所有{变体->
 变体。输出.所有{
 输出文件名="ChartView_${变体。VersionName}_${新的日期()。格式("yyyy-MM-dd")}.apk"
 }
