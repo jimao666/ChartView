@@ -1,4 +1,4 @@
-package com.lihang.chart;
+package com.jimao666.chart;
 
 import org.junit.Test;
 
