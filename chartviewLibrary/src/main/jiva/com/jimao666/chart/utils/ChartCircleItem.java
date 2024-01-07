@@ -1,4 +1,4 @@
-package com.lihang.chart.utils;
+package com.jimao666.chart.utils;
 
 import java.io.Serializable;
 
