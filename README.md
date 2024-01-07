@@ -43,7 +43,7 @@
 xml里只需要这样：
 
 ```xml
-<com.lihang.chart.view.ChartLineView
+<com.jimao666.chart.view.ChartLineView
     android:id="@+id/chartLineView"
     android:layout_width="match_parent"
     android:layout_height="200dp"
@@ -133,7 +133,7 @@ xml里只需要这样：
 
 图1为刻度值过密 --> 图2为隐藏奇数刻度值
 
-<img src="https://github.com/jimao666/ChartView/blob/master/gifs/moreDivide1.png" alt="Sample"  width="350"><img src="https://github.com/lihangleo2/ChartView/blob/master/gifs/hideOdd2.png" alt="Sample"  width="350">
+<img src="https://github.com/jimao666/ChartView/blob/master/gifs/moreDivide1.png" alt="Sample"  width="350"><img src="https://github.com/jimao666/ChartView/blob/master/gifs/hideOdd2.png" alt="Sample"  width="350">
 
 <br>
 <br>
@@ -224,7 +224,7 @@ xml里只需要这样：
 
 ## 使用(未使用自定义属性，则使用默认值)
 ```xml
-<com.lihang.chart.view.ChartCircleView
+<com.jimao666.chart.view.ChartCircleView
     android:id="@+id/charCircleView"
     android:layout_width="wrap_content"
     android:layout_height="200dp" />
