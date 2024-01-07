@@ -33,7 +33,7 @@
  - app build.gradle添加如下
     ```java
    dependencies {
-	        implementation 'com.github.jimao666:ChartView:1.0.1'
+	        implementation 'com.github.jimao666:ChartView:1.0.3'
 	}
    ```
    
