@@ -1,4 +1,4 @@
-[![](https://jitpack.io/v/lihangleo2/ChartView.svg)](https://jitpack.io/#lihangleo2/ChartView)
+[![](https://jitpack.io/v/jimao666/ChartView.svg)](https://jitpack.io/#jimao666/ChartView)
 
 # ChartView
 统计图组件,其中包括2个自定义控件：
@@ -6,17 +6,17 @@
 * ChartCircleView 饼状统计图
 
 #### ChartView诞生了
-* [ChartView诞生日](https://github.com/lihangleo2/ChartView/wiki) 
+* [ChartView诞生日](https://github.com/jimao666/ChartView/wiki) 
 
 <br>
 
 # 一、折线统计图
 <strong>效果展示:</strong>
 
-![](https://github.com/lihangleo2/ChartView/blob/master/gifs/showLine1.gif)
+![](https://github.com/jimao666/ChartView/blob/master/gifs/showLine1.gif)
 
 ## 扫描二维体验效果(下载密码是：123456)
-![](https://github.com/lihangleo2/ChartView/blob/master/gifs/eLth.png)
+![](https://github.com/jimao666/ChartView/blob/master/gifs/eLth.png)
 
 <br>
 
@@ -33,7 +33,7 @@
  - app build.gradle添加如下
     ```java
    dependencies {
-	        implementation 'com.github.lihangleo2:ChartView:1.0.0'
+	        implementation 'com.github.jimao666:ChartView:1.0.1'
 	}
    ```
    
@@ -103,7 +103,7 @@ xml里只需要这样：
 ## 折线统计图自定义属性
 在我们还未设置任何属性的时候，我们的坐标轴长这样：
 
-<img src="https://github.com/lihangleo2/ChartView/blob/master/gifs/source1.png" alt="Sample"  width="350">
+<img src="https://github.com/jimao666/ChartView/blob/master/gifs/source1.png" alt="Sample"  width="350">
 
 <br>
 <br>
@@ -113,7 +113,7 @@ xml里只需要这样：
 
 修改后如图：
 
-<img src="https://github.com/lihangleo2/ChartView/blob/master/gifs/axexAbout.png" alt="Sample"  width="350">
+<img src="https://github.com/jimao666/ChartView/blob/master/gifs/axexAbout.png" alt="Sample"  width="350">
 
 <br>
 <br>
@@ -124,7 +124,7 @@ xml里只需要这样：
 
 修改后如图：
 
-<img src="https://github.com/lihangleo2/ChartView/blob/master/gifs/divideAbout.png" alt="Sample"  width="350">
+<img src="https://github.com/jimao666/ChartView/blob/master/gifs/divideAbout.png" alt="Sample"  width="350">
 
 <br>
 <br>
@@ -133,7 +133,7 @@ xml里只需要这样：
 
 图1为刻度值过密 --> 图2为隐藏奇数刻度值
 
-<img src="https://github.com/lihangleo2/ChartView/blob/master/gifs/moreDivide1.png" alt="Sample"  width="350"><img src="https://github.com/lihangleo2/ChartView/blob/master/gifs/hideOdd2.png" alt="Sample"  width="350">
+<img src="https://github.com/jimao666/ChartView/blob/master/gifs/moreDivide1.png" alt="Sample"  width="350"><img src="https://github.com/lihangleo2/ChartView/blob/master/gifs/hideOdd2.png" alt="Sample"  width="350">
 
 <br>
 <br>
@@ -143,7 +143,7 @@ xml里只需要这样：
 
 修改后如图：
 
-<img src="https://github.com/lihangleo2/ChartView/blob/master/gifs/textAbout.png" alt="Sample"  width="350">
+<img src="https://github.com/jimao666/ChartView/blob/master/gifs/textAbout.png" alt="Sample"  width="350">
 
 <br>
 <br>
@@ -154,7 +154,7 @@ xml里只需要这样：
 
 修改后如图：
 
-<img src="https://github.com/lihangleo2/ChartView/blob/master/gifs/maxAndSpan.png" alt="Sample"  width="350">
+<img src="https://github.com/jimao666/ChartView/blob/master/gifs/maxAndSpan.png" alt="Sample"  width="350">
 
 <br>
 <br>
@@ -163,7 +163,7 @@ xml里只需要这样：
 
 修改后如图：
 
-<img src="https://github.com/lihangleo2/ChartView/blob/master/gifs/hideY.png" alt="Sample"  width="350">
+<img src="https://github.com/jimao666/ChartView/blob/master/gifs/hideY.png" alt="Sample"  width="350">
 
 <br>
 <br>
@@ -176,7 +176,7 @@ xml里只需要这样：
 
 修改后如图：
 
-<img src="https://github.com/lihangleo2/ChartView/blob/master/gifs/yDash.png" alt="Sample"  width="350">
+<img src="https://github.com/jimao666/ChartView/blob/master/gifs/yDash.png" alt="Sample"  width="350">
 
 <br>
 <br>
@@ -190,7 +190,7 @@ xml里只需要这样：
 
 修改后如图：
 
-<img src="https://github.com/lihangleo2/ChartView/blob/master/gifs/dashOnTouch.png" alt="Sample"  width="350">
+<img src="https://github.com/jimao666/ChartView/blob/master/gifs/dashOnTouch.png" alt="Sample"  width="350">
 
 <br>
 <br>
@@ -201,7 +201,7 @@ xml里只需要这样：
 #### 25、是需要折线还是需要曲线  app:cl_isCurve="true"
 修改后如图：
 
-<img src="https://github.com/lihangleo2/ChartView/blob/master/gifs/remind.png" alt="Sample"  width="350">
+<img src="https://github.com/jimao666/ChartView/blob/master/gifs/remind.png" alt="Sample"  width="350">
 
 <br>
 <br>
@@ -216,9 +216,9 @@ xml里只需要这样：
 
 |添加/移除item|初始角度startAngle|圆环or扇形|
 |:---:|:---:|:---:|
-|![](https://github.com/lihangleo2/ChartView/blob/master/gifs/circle/addItem1.gif)|![](https://github.com/lihangleo2/ChartView/blob/master/gifs/circle/startAngle2.gif)|![](https://github.com/lihangleo2/ChartView/blob/master/gifs/circle/isArc3.gif)
+|![](https://github.com/jimao666/ChartView/blob/master/gifs/circle/addItem1.gif)|![](https://github.com/jimao666/ChartView/blob/master/gifs/circle/startAngle2.gif)|![](https://github.com/jimao666/ChartView/blob/master/gifs/circle/isArc3.gif)
 |圆环比率|
-|![](https://github.com/lihangleo2/ChartView/blob/master/gifs/circle/circleRate4.gif)|
+|![](https://github.com/jimao666/ChartView/blob/master/gifs/circle/circleRate4.gif)|
 
 <br>
 
