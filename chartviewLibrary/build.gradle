@@ -7,7 +7,7 @@ android {
         minSdkVersion 22
         targetSdkVersion 29
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -33,6 +33,6 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.jimao666' //groupId 随便取
                 artifactId = 'ChartView'  //artifactId 随便取
-                version = '1.0.0'
+                version = '1.0.1'
             }
         }
