@@ -1,5 +1,8 @@
 apply plugin: 'com.android.library'
-apply plugin: 'maven-publish'
+apply plugin: 'maven'
+
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.jimao666'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
@@ -26,13 +29,4 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-                groupId = 'com.jimao666' //groupId 随便取
-                artifactId = 'ChartView'  //artifactId 随便取
-                version = '1.0.1'
-            }
-        }
+
