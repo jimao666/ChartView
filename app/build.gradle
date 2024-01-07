@@ -9,7 +9,7 @@ ApplicationID"com.leo.mychartview"
 minSdkVersion22
 TargetSDKVersion29
 版本代码1
-VersionName"1.0"
+VersionName"1.0.1"
 testInstrumentationRunner"androidx.test.runner.androidJUnitRunner"
 }
 
