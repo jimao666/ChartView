@@ -1,67 +1,76 @@
 
-申请插件：'com.android.application'
+apply plugin: 'com.android.application'
 
-安卓{
-compileSdkVersion29
-buildToolsVersion"29.0.2"
-DefaultConfig{
-ApplicationID"com.leo.mychartview"
-minSdkVersion22
-TargetSDKVersion29
-版本代码1
-VersionName"1.0.1"
-testInstrumentationRunner"androidx.test.runner.androidJUnitRunner"
-}
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.leo.mychartview"
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
 
-signingConfigs{
-密钥{
-storeFile文件("atman.jks")//签名文件
-storePassword"5888062"
-keyAlias"fastMedical"
-keyPassword"5888062"//签名密码
-}
-}
+    signingConfigs {
+        key {
+            storeFile file("atman.jks")//签名文件
+            storePassword "5888062"
+            keyAlias "fastMedical"
+            keyPassword "5888062"//签名密码
+        }
+    }
 
-buildTypes{
-发布{
-minifyEnabled假的
-proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),'Proguard-rules.pro'
-signingConfig signingConfigs。钥匙
-}
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.key
+        }
 
-调试{
-signingConfig signingConfigs。钥匙
-}
-}
+        debug {
+            signingConfig signingConfigs.key
+        }
+    }
 
-数据绑定{
-enabled=正确
-}
-compileOptions{
-sourceCompatibility=1.8
-targetCompatibility=1.8
-}
+    dataBinding {
+        enabled = true
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
 
 
     //多渠道打包
-flavorDimensions"标记" //相当于一个标记
-productFlavors{
-medical{dimension"标记"}
-}
+    flavorDimensions "mark" //相当于一个标记
+    productFlavors {
+        medical { dimension "mark" }
+    }
 
-productFlavors。所有{
-风味->风味。manifestPlaceholder=[Atman_CHANNEL_VALUE：姓名]
-}
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [ATMAN_CHANNEL_VALUE: name]
+    }
 
     //自定义打包时apk名字
-安卓。应用程序变量。所有{变体->
-变体。输出.所有{
-输出文件名="ChartView_${变体。VersionName}_${新的日期()。格式("yyyy-MM-dd")}.apk"
-}
-}
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "ChartView_${variant.versionName}_${new Date().format("yyyy-MM-dd")}.apk"
+        }
+    }
 }
 
-相依性{
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation project(path: ':chartviewLibrary')
+}
+
 实施文件树(Dir： 'libs',包括：['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
