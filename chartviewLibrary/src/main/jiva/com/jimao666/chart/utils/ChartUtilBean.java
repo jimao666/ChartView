@@ -1,4 +1,4 @@
-package com.lihang.chart.utils;
+package com.jimao666.chart.utils;
 
 import android.graphics.Paint;
 import android.graphics.Path;
