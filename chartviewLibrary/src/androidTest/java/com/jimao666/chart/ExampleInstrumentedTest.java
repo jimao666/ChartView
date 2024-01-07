@@ -1,4 +1,4 @@
-package com.lihang.chart;
+package com.jimao666.chart;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.lihang.mycustomview", appContext.getPackageName());
+        assertEquals("com.jimao666.mycustomview", appContext.getPackageName());
     }
 }
